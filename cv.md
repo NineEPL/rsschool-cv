@@ -1,5 +1,7 @@
 # Eryk Lebiadzinski
 
+![image](./nineepl_pfp.jpg)
+
 ## Contact information:
  - Email: lebedinski.erik@gmail.com
  - Discord: @nineepl
