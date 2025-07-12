@@ -72,8 +72,8 @@ def count_patterns_from(firstPoint, length):
 ```
 
 ## Working expeirence:
-Участвовал в создании сайта [INFORMEJTYCY](https://informejtycy.pl/) в рамках польской олимпиады [Zwolieni z Teorii](https://zwolnienizteorii.pl/).
-Полностью создал сайт [MercyRig](https://erikepl.w.staszic.waw.pl/) в рамках школьного проекта.
+ - Participated in the creation of the website [INFORMEJTYCY](https://informejtycy.pl/) as part of the Polish olympiad [Zwolieni z Teorii](https://zwolnienizteorii.pl/).
+ - Fully developed the website [MercyRig](https://erikepl.w.staszic.waw.pl/) as part of a school project.
 
 ## Education
  - XIV LO ogólnokształcące im. Stanisława Staszica w Warszawie(in progress)
