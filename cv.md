@@ -1,4 +1,4 @@
-# Erik Lebedinski
+# Eryk Lebiadzinski
 
 ## Контакты
  - Email: lebedinski.erik@gmail.com
