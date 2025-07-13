@@ -1,1 +1,1 @@
-https://nineepl.github.io/rsschool-cv/cv
+https://nineepl.github.io/rsschool-cv/
