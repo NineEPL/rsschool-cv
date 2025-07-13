@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eryk Lebiadzinski CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+</head>
+
+<body>
+    <div class="card">
+        <header>
+            <h1>Eryk Lebiadzinski</h1>
+            <img class="pfp" src="./assets/img/nineepl_pfp.jpg" alt="Profile picture of Eryk Lebiadzinski" />
+        </header>
+
+        <nav>
+            <h2>Content:</h2>
+            <ol>
+                <li><a href="#contact">Contact Information</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code-example">Code Example</a></li>
+                <li><a href="#experience">Working Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#languages">Languages</a></li>
+            </ol>
+        </nav>
+
+        <main>
+            <section id="contact">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li>Email: <a href="mailto:lebedinski.erik@gmail.com">lebedinski.erik@gmail.com</a></li>
+                    <li>Discord: @nineepl</li>
+                    <li>Phone number: +48 2137 2137 (that's a joke)</li>
+                    <li>Github: <a href="https://github.com/NineEPL" target="_blank">NineEPL</a></li>
+                </ul>
+            </section>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    Hi! I'm Erik — a passionate learner with a love for both music and code. When I'm not shredding on
+                    electric or bass guitar, I’m deep-diving into gear, pushing it to its limits just to see what
+                    creative chaos I can unlock. I bring the same curiosity and intensity to programming, especially
+                    when solving algorithmic challenges on platforms like Codewars. Whether it’s sound waves or code
+                    lines, I’m always looking for ways to break the rules (responsibly) and build something exciting.
+                </p>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Blender 3D</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ul>
+            </section>
+
+            <section id="code-example">
+                <h2>Code Example</h2>
+                <p>Task: "Screen Locking Patterns" from Codewars</p>
+                <pre><code class="language-python">from itertools import*
+def somethinginbetween(F,L):
+    limbo = ""
+    findex = []
+    lindex = []
+    screen=["ABC","DEF","GHI"]
+    for i in range(3):
+        if F in screen[i]:
+            findex.append(i)
+            findex.append(screen[i].find(F))
+    for i in range(3):
+        if L in screen[i]:
+            lindex.append(i)
+            lindex.append(screen[i].find(L))
+    if findex[0] == lindex[0]:
+        limbo = screen[findex[0]][1]
+    elif findex[1] == lindex[1]:
+        limbo = screen[1][findex[1]]
+    else:
+        limbo = "E"
+    return limbo
+
+def count_patterns_from(firstPoint, length):
+    if length ==0 or length == 1:
+        return length
+    points = "ABCDEFGHI"
+    p_tree = {"A":"BDEFH","B":"ACDEFGI","C":"BDEFH",
+              "D":"ABCEGHI","E":"ABCDFGHI","F":"ABCEGHI",
+              "G":"BDEFH","H":"ACDEFGI","I":"BDEFH"}
+    nice_count = 0
+    a_points = points.replace(firstPoint, "")
+    for i in permutations(a_points,length-1):
+        combo = firstPoint + "".join(i)
+        used = [combo[0]]
+        bad = False
+        for j in range(1, length):
+            if combo[j] not in p_tree[combo[j-1]]:
+                if somethinginbetween(combo[j], combo[j-1]) not in used:
+                    bad = True
+                    break
+            used.append(combo[j])
+        if not bad:
+            nice_count += 1
+    return nice_count
+</code></pre>
+            </section>
+
+            <section id="experience">
+                <h2>Working Experience</h2>
+                <ul>
+                    <li>Participated in the creation of the website <a href="https://informejtycy.pl/"
+                            target="_blank">INFORMEJTYCY</a> as part of the Polish olympiad <a
+                            href="https://zwolnienizteorii.pl/" target="_blank">Zwolnieni z Teorii</a>.</li>
+                    <li>Fully developed the website <a href="https://erikepl.w.staszic.waw.pl/"
+                            target="_blank">MercyRig</a> as part of a school project.</li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>XIV LO ogólnokształcące im. Stanisława Staszica w Warszawie (in progress)</li>
+                    <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+                </ul>
+            </section>
+
+            <section id="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>English: B1/B2</li>
+                    <li>Russian: native</li>
+                    <li>German: A1</li>
+                    <li>Polish: B2/C1</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                <a href="https://github.com/NineEPL" target="_blank">Github</a> | 2025 |
+                <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
+                    <img class="rsschool-logo-footer" src="./assets/img/rs-school-logo.svg" alt="RS School Logo" />
+                </a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
