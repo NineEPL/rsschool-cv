@@ -88,9 +88,7 @@ def count_patterns_from(firstPoint, length):
     if length ==0 or length == 1:
         return length
     points = "ABCDEFGHI"
-    p_tree = {"A":"BDEFH","B":"ACDEFGI","C":"BDEFH",
-              "D":"ABCEGHI","E":"ABCDFGHI","F":"ABCEGHI",
-              "G":"BDEFH","H":"ACDEFGI","I":"BDEFH"}
+    p_tree = {"A":"BDEFH","B":"ACDEFGI","C":"BDEFH","D":"ABCEGHI","E":"ABCDFGHI","F":"ABCEGHI","G":"BDEFH","H":"ACDEFGI","I":"BDEFH"}
     nice_count = 0
     a_points = points.replace(firstPoint, "")
     for i in permutations(a_points,length-1):
