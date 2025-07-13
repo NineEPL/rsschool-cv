@@ -65,15 +65,15 @@ section ul li {
 
 pre {
     background-color: var(--code-background);
-    padding: 1.5em;
+    padding: 25px;
     border-radius: 20px;
     overflow-x: auto;
 }
 
 footer {
     text-align: center;
-    margin-top: 2em;
-    padding-top: 1em;
+    margin-top: 30px;
+    padding-top: 20px;
     border-top: 1.5px solid var(--border-color);
     font-size: 0.9em;
     color: #999;
