@@ -19,7 +19,7 @@ body {
     max-width: 860px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 30px;
+    padding: 10px 30px;
     background-color: var(--card-bg);
     border-radius: 30px;
 }
@@ -27,7 +27,7 @@ body {
 h1,
 h2 {
     color: var(--accent-color);
-    margin-top: 0;
+    margin-top: 0.5em;
     margin-bottom: 1em;
 
 }
@@ -73,9 +73,10 @@ pre {
 footer {
     text-align: center;
     margin-top: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
     border-top: 1.5px solid var(--border-color);
-    font-size: 0.9em;
+    font-size: 1.1em;
     color: #999;
 }
 
